@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bel.ly :: Sign Up</title>
+    <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
+    <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/signInUp.css">
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/jquery.transit.js"></script>
+</head>
+
+<body translate="no">
+
+    <div id="container">
+        <div id="inviteContainer">
+            <div class="logoContainer">
+              <img class="logo" src="../assets/img/belly-512.png" />
+              <img class="text" src="../assets/img/belly-text.png" />
+            </div>
+            <div class="acceptContainer">
+                <form action="./signup-final.html" method="GET">
+                    <h1>JOIN WITH BEL.LY</h1>
+                    <div class="formContainer">
+                        <div class="formDiv" style="transition-delay: 0.2s;">
+                            <p>VERIFICATION CODE</p>
+                            <input type="number" placeholder="0" minlength="1" maxlength="1" required=""  />
+                            <input type="number" placeholder="0" minlength="1" maxlength="1" required=""  />
+                            <input type="number" placeholder="0" maxlength="1" minlength="1" required=""  />
+                            <input type="number" placeholder="0" minlength="1" maxlength="1" required=""  />
+                            <p class="signup">Enter verification code that sended to your email. You can resend verification code after <b id="time"></b> second.</p>
+                            <div id="resentVerification" style="display:none">
+                                <a class="forgotPas" href="./signup-verification.html">RESENT VERIFICATION CODE</a>
+                            </div>
+                        </div>
+                        <div class="formDiv" style="transition-delay: 0.6s;">
+                            <button class="acceptBtn" type="submit">Next</button>
+                            <span class="signup">Have an account?<a href="signin.html">Sign In</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/signInUp.js"></script>
+    <script type="text/javascript">
+        var time = 19;
+        setInterval(function() {
+            time--;
+            if (time < 0) {
+                $("#resentVerification").show();
+            } else {
+                document.getElementById("time").innerHTML = time;
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
