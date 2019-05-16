@@ -9,8 +9,12 @@
 </head>
 <body>
     <div id="container">
-        <img class="logo" src="assets/img/belly-512.png" />
-        <img class="text" src="assets/img/belly-text.png" />
+        <div id="inviteContainer">
+            <div class="logoContainer">
+                <img class="logo" src="assets/img/belly-512.png" />
+                <img class="text" src="assets/img/belly-text.png" />
+            </div>
+        </div>
     </div>
 </body>
 </html>
