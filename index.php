@@ -23,7 +23,6 @@
         </div>
     </div>
 
-    <iframe width="1" height="1" wmode="transparent" src="https://www.youtube.com/embed/sxiCa2zIi18?autoplay=1&loop=1&playlist=sxiCa2zIi18" frameborder="0" allowfullscreen>
     <script type="text/javascript">
         $(function() {
 
@@ -45,5 +44,7 @@
 
         });
     </script>
+
+    <iframe width="1" height="1" wmode="transparent" src="https://www.youtube.com/embed/sxiCa2zIi18?autoplay=1&loop=1&playlist=sxiCa2zIi18" frameborder="0" allowfullscreen>
 </body>
 </html>
