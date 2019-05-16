@@ -9,8 +9,10 @@
 </head>
 <body>
     <div id="container">
-        <img src="assets/img/belly-256.png">
-        <h1>BEL.LY IN DEVELOPMENT</h1>
+        <div id="inviteContainer">
+            <img src="assets/img/belly-256.png">
+            <h1>BEL.LY IN DEVELOPMENT</h1>
+        </div>
     </div>
 </body>
 </html>
