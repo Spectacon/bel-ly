@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="assets/signInUp.css">
 </head>
 <body>
-    <img src="assets/img/belly-256.png">
-    <h1>BEL.LY IN DEVELOPMENT</h1>
+    <div id="container">
+        <img src="assets/img/belly-256.png">
+        <h1>BEL.LY IN DEVELOPMENT</h1>
+    </div>
 </body>
 </html>
