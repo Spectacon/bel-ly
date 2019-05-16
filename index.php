@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bel.ly</title>
+    <link rel="shortcut icon" href="assets/img/belly-32.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/belly-32.png" type="image/x-icon">
+
     <link rel="stylesheet" href="assets/css/signInUp.css">
 </head>
 <body>
@@ -16,5 +19,23 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        $(function() {
+
+        setTimeout(function() {
+            $('.logoContainer').transition({
+                scale: 1
+            }, 700, 'ease');
+            setTimeout(function() {
+                $('.logoContainer .logo').addClass('loadIn');
+                setTimeout(function() {
+                    $('.logoContainer .text').addClass('loadIn');
+                }, 500);
+            }, 1000);
+        }, 10);
+
+        });
+    </script>
 </body>
 </html>
