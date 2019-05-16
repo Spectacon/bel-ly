@@ -9,7 +9,8 @@
 </head>
 <body>
     <div id="container">
-        <img src="assets/img/belly-256.png">
+        <img class="logo" src="assets/img/belly-512.png" />
+        <img class="text" src="assets/img/belly-text.png" />
     </div>
 </body>
 </html>
