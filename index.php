@@ -9,11 +9,7 @@
 </head>
 <body>
     <div id="container">
-        <div id="inviteContainer">
-            <img src="assets/img/belly-256.png">
-            <br>
-            <h1>BEL.LY IN DEVELOPMENT</h1>
-        </div>
+        <img src="assets/img/belly-256.png">
     </div>
 </body>
 </html>
