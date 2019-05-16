@@ -9,6 +9,8 @@
     <link rel="icon" href="assets/img/belly-32.png" type="image/x-icon">
 
     <link rel="stylesheet" href="assets/css/signInUp.css">
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery.transit.js"></script>
 </head>
 <body>
     <div id="container">
