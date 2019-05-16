@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bel.ly</title>
+    <title>Bel.ly - Escrow & Payment Solution</title>
     <link rel="shortcut icon" href="assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="assets/img/belly-32.png" type="image/x-icon">
 
@@ -24,6 +24,10 @@
 
     <script type="text/javascript">
         $(function() {
+
+        var images = ['assets/img/background/1.jpg', 'assets/img/background/2.jpg', 'assets/img/background/3.jpg', 'assets/img/background/4.jpg', 'assets/img/background/5.jpg'];
+
+        $('#container').append('<style>#container, .acceptContainer:before, #logoContainer:before {background: url(' + images[Math.floor(Math.random() * images.length)] + ') center fixed }');
 
         setTimeout(function() {
             $('.logoContainer').transition({
