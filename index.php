@@ -25,16 +25,20 @@
 
     <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
         <iframe frameborder="0" height="100%" width="100%" 
-            src="https://youtube.com/embed/sxiCa2zIi18?autoplay=1&controls=0&showinfo=0&autohide=1">
+            src="https://youtube.com/embed/C9lxOkqc_F8?autoplay=1&controls=0&showinfo=0&autohide=1">
         </iframe>
     </div>
 
     <script type="text/javascript">
         $(function() {
 
-        var images = ['assets/img/background/1.jpg', 'assets/img/background/2.jpg', 'assets/img/background/4.jpg', 'assets/img/background/5.jpg'];
+        function _change() {
+            var images = ['assets/img/background/1.jpg', 'assets/img/background/2.jpg', 'assets/img/background/4.jpg', 'assets/img/background/5.jpg'];
+            $('#container').append('<style>#container, .acceptContainer:before, #logoContainer:before {background: url(' + images[Math.floor(Math.random() * images.length)] + ') center fixed }');
+            setTimeout(_change, 2000);
+        }
 
-        $('#container').append('<style>#container, .acceptContainer:before, #logoContainer:before {background: url(' + images[Math.floor(Math.random() * images.length)] + ') center fixed }');
+        _change();
 
         setTimeout(function() {
             $('.logoContainer').transition({
