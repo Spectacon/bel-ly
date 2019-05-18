@@ -1,8 +1,13 @@
 ![Bel.ly Text Logo](assets/img/belly-text.png)
 
 # BEL.LY - Escrow & Payment Solution (Front-End)
+#### Will be update soon
 
 Just a simple another front-end project. This is an HTML, CSS, and JavaScript to build Web Static for completed task from the lecture. Just for fun!
+
+### Donate
+- If this project very help you to learn about front-end and u want support me , you can give me a cup of coffee :)
+- [![Donation](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://blockchain.info/id/address/1EMZptL66nvVLCfyGQNW2bTp1XP6ec4bWw)
 
 ## Current Library Used
 - jQuery
