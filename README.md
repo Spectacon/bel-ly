@@ -1,6 +1,6 @@
 ![Bel.ly Text Logo](assets/img/belly-text.png)
 
-# BEL.LY - Escrow & Payment Solution
+# BEL.LY - Escrow & Payment Solution (Front-End)
 
 Just a simple another front-end project. This is an HTML, CSS, and JavaScript to build Web Static for completed task from the lecture. Just for fun!
 
@@ -8,7 +8,7 @@ Just a simple another front-end project. This is an HTML, CSS, and JavaScript to
 - jQuery
 
 ## Development
-This development proccess can be see at https://bel-ly/herokuapp.com
+This development proccess can be see at https://bel-ly.herokuapp.com
 
 ## Disclaimer
 
