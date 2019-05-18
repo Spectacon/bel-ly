@@ -8,7 +8,7 @@ Just a simple another front-end project. This is an HTML, CSS, and JavaScript to
 - jQuery
 
 ## Development
-This development proccess can be see at https://bel-ly.herokuapp.com
+Currently is under development. This development proccess can be see at https://bel-ly.herokuapp.com
 
 ## Disclaimer
 
