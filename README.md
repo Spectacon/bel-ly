@@ -6,6 +6,15 @@ Just a simple another front-end project. This is an HTML, CSS, and JavaScript to
 
 ## Current Library Used
 - jQuery
+- D3
+
+## To Do List
+Imam Kusniadi
+- Login & Register ```DONE```
+- Home Dashboard ```PROGRESS```
+- Account Profile ```NONE```
+- Withdraw ```NONE```
+- Transaction Detail ```NONE```
 
 ## Development
 Currently is under development. This development proccess can be see at https://bel-ly.herokuapp.com
