@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="../assets/css/load.css">
+    <link rel="stylesheet" href="../assets/css/start.css">
     <script src="../assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="../assets/js/lib/jquery.transit.js"></script>
 </head>
@@ -21,16 +21,18 @@
               <img class="text" src="../assets/img/belly-text.png" />
             </div>
             <div class="acceptContainer">
-                <form action="./signin.html" method="GET">
+                <form action="./signin.html" method="POST">
                     <h1>JOIN WITH BEL.LY</h1>
                     <div class="formContainer">
                         <div class="formDiv" style="transition-delay: 0.2s;">
                             <p>USERNAME</p>
-                            <input type="text" required="" placeholder="Username" />
+                            <input type="text" id="username" name="username" required="" autocomplete="off" placeholder="Username" />
+                            <p id="typingUsername"></p>
                         </div>
                         <div class="formDiv" style="transition-delay: 0.4s;">
                             <p>PASSWSORD</p>
-                            <input type="password" required="" placeholder="Password" />
+                            <input type="password" id="password" name="password" required="" placeholder="Password" />
+                            <p id="typingPassword"></p>
                         </div>
                         <div class="formDiv" style="transition-delay: 0.6s;">
                             <button class="acceptBtn" type="submit">Sign Up</button>
@@ -41,7 +43,31 @@
             </div>
         </div>
     </div>
-    <script src="../assets/js/load.js"></script>
+    <script src="../assets/js/start.simple.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#username").keypress(function(){
+                $("#typingUsername").text("Typing username ...");
+                $("#typingUsername").css("color", "#aaa");
+                $("#typingUsername").css("font-size", "10px");
+                $("#typingUsername").css("padding-top", "5px");
+                $("#typingUsername").css("display", "block");
+            });
+            $("#username").blur(function(){
+                $("#typingUsername").fadeOut();
+            });
+            $("#password").keypress(function(){
+                $("#typingPassword").text("Typing password ...");
+                $("#typingPassword").css("color", "#aaa");
+                $("#typingPassword").css("font-size", "10px");
+                $("#typingPassword").css("padding-top", "5px");
+                $("#typingPassword").css("display", "block");
+            });
+            $("#password").blur(function(){
+                $("#typingPassword").fadeOut();
+            });
+        });
+    </script>
 </body>
 
 </html>

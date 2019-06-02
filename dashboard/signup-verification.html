@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="../assets/css/load.css">
+    <link rel="stylesheet" href="../assets/css/start.css">
     <script src="../assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="../assets/js/lib/jquery.transit.js"></script>
 </head>
@@ -21,15 +21,16 @@
               <img class="text" src="../assets/img/belly-text.png" />
             </div>
             <div class="acceptContainer">
-                <form action="./signup-final.html" method="GET">
+                <form action="./signup-final.html" method="POST">
                     <h1>JOIN WITH BEL.LY</h1>
                     <div class="formContainer">
                         <div class="formDiv" style="transition-delay: 0.2s;">
                             <p>VERIFICATION CODE</p>
-                            <input type="number" placeholder="0" minlength="1" maxlength="1" required=""  />
-                            <input type="number" placeholder="0" minlength="1" maxlength="1" required=""  />
-                            <input type="number" placeholder="0" maxlength="1" minlength="1" required=""  />
-                            <input type="number" placeholder="0" minlength="1" maxlength="1" required=""  />
+                            <input type="number" id="verificationCode1" name="code[]" placeholder="0" maxlength="1" required="" autocomplete="off"  />
+                            <input type="number" id="verificationCode2" name="code[]" placeholder="0" maxlength="1" required="" autocomplete="off"  />
+                            <input type="number" id="verificationCode3" name="code[]" placeholder="0" maxlength="1" required="" autocomplete="off"  />
+                            <input type="number" id="verificationCode4" name="code[]" placeholder="0" maxlength="1" required="" autocomplete="off"  />
+                            <p id="typingCode"></p>
                             <p class="signup">Enter verification code that sended to your email. You can resend verification code after <b id="time"></b> second.</p>
                             <div id="resentVerification" style="display:none">
                                 <a class="forgotPas" href="./signup-verification.html">RESENT VERIFICATION CODE</a>
@@ -44,9 +45,9 @@
             </div>
         </div>
     </div>
-    <script src="../assets/js/load.js"></script>
+    <script src="../assets/js/start.simple.js"></script>
     <script type="text/javascript">
-        var time = 19;
+        var time = 20;
         setInterval(function() {
             time--;
             if (time < 0) {
@@ -55,6 +56,19 @@
                 document.getElementById("time").innerHTML = time;
             }
         }, 1000);
+
+        $(document).ready(function(){
+            $("#verificationCode1, #verificationCode2, #verificationCode3, #verificationCode4").keypress(function(){
+                $("#typingCode").text("Typing verification code  ...");
+                $("#typingCode").css("color", "#aaa");
+                $("#typingCode").css("font-size", "10px");
+                $("#typingCode").css("padding-top", "5px");
+                $("#typingCode").css("display", "block");
+            });
+            $("#verificationCode1, #verificationCode2, #verificationCode3, #verificationCode4").blur(function(){
+                $("#typingCode").fadeOut();
+            });
+        });
     </script>
 </body>
 

@@ -8,13 +8,14 @@
     <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="../assets/css/load.css">
+    <link rel="stylesheet" href="../assets/css/start.css">
     <script src="../assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="../assets/js/lib/jquery.transit.js"></script>
 </head>
 
 <body>
 
+    <div class="notify"><span id="notifyType" class=""></span></div>
     <div id="container">
         <div id="mainContainer">
             <div class="logoContainer">
@@ -22,20 +23,22 @@
               <img class="text" src="../assets/img/belly-text.png" />
             </div>
             <div class="acceptContainer">
-                <form action="home.html" method="GET">
+                <form action="home.html" method="POST">
                     <h1>WELCOME BACK TO BEL.LY</h1>
                     <div class="formContainer">
                         <div class="formDiv" style="transition-delay: 0.2s;">
                             <p>EMAIL</p>
-                            <input type="email" required="" placeholder="Email" />
+                            <input type="email" id="email" name="email" required="" autocomplete="off" placeholder="Email" />
+                            <p id="typingEmail"></p>
                         </div>
                         <div class="formDiv" style="transition-delay: 0.4s;">
                             <p>PASSWSORD</p>
-                            <input type="password" required="" placeholder="Password" />
+                            <input type="password" id="password" name="password" required="" placeholder="Password" />
+                            <p id="typingPassword"></p>
                             <a class="forgotPas" href="forgotpassword.html">FORGOT YOUR PASSWORD?</a>
                         </div>
                         <div class="formDiv" style="transition-delay: 0.6s;">
-                            <button class="acceptBtn" type="submit">Sign In</button>
+                            <button class="acceptBtn" type="submit" id="btn-submit">Sign In</button>
                             <span class="signup">Need an account?<a href="signup.html">Sign Up</a></span>
                         </div>
                     </div>
@@ -43,7 +46,31 @@
             </div>
         </div>
     </div>
-    <script src="../assets/js/load.js"></script>
+    <script src="../assets/js/start.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#email").keypress(function(){
+                $("#typingEmail").text("Typing email ...");
+                $("#typingEmail").css("color", "#aaa");
+                $("#typingEmail").css("font-size", "10px");
+                $("#typingEmail").css("padding-top", "5px");
+                $("#typingEmail").css("display", "block");
+            });
+            $("#email").blur(function(){
+                $("#typingEmail").fadeOut();
+            });
+            $("#password").keypress(function(){
+                $("#typingPassword").text("Typing password ...");
+                $("#typingPassword").css("color", "#aaa");
+                $("#typingPassword").css("font-size", "10px");
+                $("#typingPassword").css("padding-top", "5px");
+                $("#typingPassword").css("display", "block");
+            });
+            $("#password").blur(function(){
+                $("#typingPassword").fadeOut();
+            });
+        });
+    </script>
 </body>
 
 </html>
