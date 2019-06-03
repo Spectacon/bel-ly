@@ -223,8 +223,8 @@ form h1.loadIn {
     color: #fff;
 }
 
-/** Button */
-.acceptBtn {
+/** Submit Button */
+.submitBtn {
     width: 100%;
     box-sizing: border-box;
     background: #7289DA;
@@ -240,19 +240,19 @@ form h1.loadIn {
     user-select: none;
 }
 
-.acceptBtn:hover {
+.submitBtn:hover {
     background: #6B7FC5;
 }
 
-/** Signup text and link */
-.signup {
+/** Link Button and Hover */
+.linkBtn {
     color: #aaa;
     font-size: 12px;
     padding-top: 15px;
     display: block;
 }
 
-.signup a {
+.linkBtn a {
     color: #fff;
     text-decoration: none;
     margin-left: 5px;
@@ -264,6 +264,6 @@ form h1.loadIn {
     user-select: none;
 }
 
-.signup a:hover {
+.linkBtn a:hover {
     box-shadow: inset 0 -2px 0 #fff;
 }
