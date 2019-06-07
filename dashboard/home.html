@@ -9,36 +9,61 @@
     <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <!-- Fontawesome -->
+    <link rel='stylesheet' href='../assets/css/lib/font-awesome.min.css'>
 </head>
 
 <body>
     <div class="belly-logo">
-        <a href="./home.html"><span>[</span>BEL <span class="tx-info">.</span> LY<span>]</span> </a>
+        <a href="./home.html">
+            <img src="../assets/img/belly-32.png" class="belly-logo-image" height="32">
+            <img src="../assets/img/belly-text.png" class="belly-logo-image" height="32">
+        </a>
     </div>
-    <div class="belly-sideleft overflow-y-auto">
-            <ul class="belly-sideleft-menu">
-                    <li class="belly-menu-item">
-                        <a class="belly-menu-link" href="./home.html">
-                            <span class="menu-item-label">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="belly-menu-item">
+    <div class="belly-sideleft overflow-y-auto ps">
+        <ul class="belly-sideleft-menu">
+            <li class="belly-menu-item">
+                <a class="belly-menu-link active" href="./home.html">
+                    <i class="menu-item-icon fa fa-diamond tx-24"></i>
+                    <span class="menu-item-label">Dashboard</span>
+                </a>
+            </li>
+            <li class="belly-menu-item">
+                    <a class="belly-menu-link" href="./products.html">
+                        <i class="menu-item-icon fa fa-clone tx-24"></i>
                         <span class="menu-item-label">Products</span>
-                    </li>
-                    <li class="belly-menu-item">
+                    </a>
+            </li>
+            <li class="belly-menu-item">
+                    <a class="belly-menu-link" href="./transaction.html">
+                        <i class="menu-item-icon fa fa-file tx-24"></i>
                         <span class="menu-item-label">Transaction</span>
-                    </li>
-                    <li class="belly-menu-item">
+                    </a>
+             </li>
+            <li class="belly-menu-item">
+                    <a class="belly-menu-link" href="./withdraw.html">
+                        <i class="menu-item-icon fa fa-credit-card tx-24"></i>
                         <span class="menu-item-label">Withdraw</span>
-                    </li>
-                    <li class="belly-menu-item">
+                    </a>
+            </li>
+            <li class="belly-menu-item">
+                    <a class="belly-menu-link" href="./setting.html">
+                        <i class="menu-item-icon fa fa-cogs tx-24"></i>
                         <span class="menu-item-label">Setting</span>
-                    </li>
-                    <li class="belly-menu-item">
+                    </a>
+            </li>
+            <li class="belly-menu-item">
+                    <a class="belly-menu-link" href="./support.html">
+                        <i class="menu-item-icon fa fa-paper-plane tx-24"></i>
                         <span class="menu-item-label">Support</span>
-                    </li>
-            </ul>
+                    </a>
+            </li>
+        </ul>
     </div>
+    <div class="belly-header">
+
+    </div>
+    <script src="../assets/js/start.simple.js"></script>
 </body>
 
 </html>
