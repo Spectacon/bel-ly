@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,12 @@
 </head>
 
 <body>
+    <!-- Preload animation -->
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div>
+    <!-- End of Preload animation -->
+
     <div class="belly-logo">
         <a href="./home.html">
             <img src="../assets/img/belly-32.png" class="belly-logo-image" height="32">
@@ -29,41 +36,91 @@
                 </a>
             </li>
             <li class="belly-menu-item">
-                    <a class="belly-menu-link" href="./products.html">
-                        <i class="menu-item-icon fa fa-clone tx-24"></i>
-                        <span class="menu-item-label">Products</span>
-                    </a>
+                <a onclick="dropdownMenuNavigation()" href="#" class="belly-menu-link with-sub">
+                    <i class="menu-item-icon fa fa-clone tx-24"></i>
+                    <span class="menu-item-label">Products</span>
+                </a>
+                <ul id="navDropdown" class="belly-menu-sub flex-column">
+                    <li class="sub-item">
+                        <a class="sub-link" href="./item.html">Item</a>
+                    </li>
+                    <li class="sub-item">
+                        <a class="sub-link" href="./service.html">Service</a>
+                    </li>
+                </ul>
             </li>
             <li class="belly-menu-item">
-                    <a class="belly-menu-link" href="./transaction.html">
-                        <i class="menu-item-icon fa fa-file tx-24"></i>
-                        <span class="menu-item-label">Transaction</span>
-                    </a>
-             </li>
-            <li class="belly-menu-item">
-                    <a class="belly-menu-link" href="./withdraw.html">
-                        <i class="menu-item-icon fa fa-credit-card tx-24"></i>
-                        <span class="menu-item-label">Withdraw</span>
-                    </a>
+                <a class="belly-menu-link" href="./transaction.html">
+                    <i class="menu-item-icon fa fa-file tx-24"></i>
+                    <span class="menu-item-label">Transaction</span>
+                </a>
             </li>
             <li class="belly-menu-item">
-                    <a class="belly-menu-link" href="./setting.html">
-                        <i class="menu-item-icon fa fa-cogs tx-24"></i>
-                        <span class="menu-item-label">Setting</span>
-                    </a>
+                <a class="belly-menu-link" href="./withdraw.html">
+                    <i class="menu-item-icon fa fa-credit-card tx-24"></i>
+                    <span class="menu-item-label">Withdraw</span>
+                </a>
             </li>
             <li class="belly-menu-item">
-                    <a class="belly-menu-link" href="./support.html">
-                        <i class="menu-item-icon fa fa-paper-plane tx-24"></i>
-                        <span class="menu-item-label">Support</span>
-                    </a>
+                <a class="belly-menu-link" href="./setting.html">
+                    <i class="menu-item-icon fa fa-cogs tx-24"></i>
+                    <span class="menu-item-label">Setting</span>
+                </a>
+            </li>
+            <li class="belly-menu-item">
+                <a class="belly-menu-link" href="./support.html">
+                    <i class="menu-item-icon fa fa-paper-plane tx-24"></i>
+                    <span class="menu-item-label">Support</span>
+                </a>
             </li>
         </ul>
+        <div class="belly-box-ads-padding">
+            <div class="belly-box-ads">
+                <div class="belly-box-ads-wrapper">
+                    <span class="ads-title">Get Pro Badge <i class="menu-item-icon fa fa-star tx-24"></i></span>
+                    <div class="benefits">
+                        <p class="benefit">- Get more product space</p>
+                        <p class="benefit">- Best support 24/7</p>
+                        <p class="benefit">- No fee in withdraw</p>
+                        <p class="benefit">- No payment limit</p>
+                        <p class="benefit">- Payment will more faster &nbsp;&nbsp;in clereance</p>
+
+                        <button class="belly-button-ads belly-button-ads-x" type="button">Check it out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="belly-header">
+        <div class="belly-header-left">
 
+        </div>
+        <div class="belly-header-right">
+            <nav class="nav">
+                <div class="avatar-dropdown">
+                    <img src="../assets/img/avatar/default.png" onclick="dropdownMenu()" class="wd-32 rounded-circle dropbtn" alt="">
+                    <div id="myDropdown" class="avatar-dropdown-content">
+                        <a style="font-weight: bold; color: #fff;">Imam Kusniadi</a>
+                        <hr style="width: 158px">
+                        <a href="#notification"><i class="menu-item-icon fa fa-bell tx-24"></i> Notification</a>
+                        <a href="./account.html"><i class="menu-item-icon fa fa-user tx-24"></i> Account Profile</a>
+                        <a href="./change-password.html"><i class="menu-item-icon fa fa-key tx-24"></i> Change Password</a>
+                        <a href="./#logout"><i class="menu-item-icon fa fa-power-off tx-24 log-out"></i> <span class="log-out">Log Out</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
-    <script src="../assets/js/start.simple.js"></script>
+
+    <div class="belly-mainpanel" style="position: relative;">
+        <div class="belly-pagetitle">
+            <h2>Dashboard</h2>
+            <p>Welcome back Imam Kusniadi enjoy your business with us.</p>
+        </div>
+    </div>
+
+    <script src="../assets/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
 </body>
 
 </html>

@@ -2,22 +2,22 @@ $(function() {
 
     var images = ['bg-1.png', 'bg-2.png', 'bg-3.png'];
 
-    $('#container').append('<style>#container, .acceptContainer:before, #logoContainer:before {background: url(../assets/img/background/' + images[Math.floor(Math.random() * images.length)] + ') center fixed }');
+    $('#container').append('<style>#container, .belly-accept-container:before, #belly-logo-container:before {background: url(../assets/img/background/' + images[Math.floor(Math.random() * images.length)] + ') center fixed }');
 
     setTimeout(function() {
-        $('.logoContainer').transition({
+        $('.belly-logo-container').transition({
             scale: 1
         }, 700, 'ease');
         setTimeout(function() {
-            $('.logoContainer .logo').addClass('loadIn');
+            $('.belly-logo-container .logo').addClass('loadIn');
             setTimeout(function() {
-                $('.logoContainer .text').addClass('loadIn');
+                $('.belly-logo-container .text').addClass('loadIn');
                 setTimeout(function() {
-                    $('.acceptContainer').transition({
+                    $('.belly-accept-container').transition({
                         height: '431.5px'
                     });
                     setTimeout(function() {
-                        $('.acceptContainer').addClass('loadIn');
+                        $('.belly-accept-container').addClass('loadIn');
                         setTimeout(function() {
                             $('.formDiv, form h1').addClass('loadIn');
                         }, 500);
