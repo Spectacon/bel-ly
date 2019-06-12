@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="../assets/css/preload.css">
     <link rel="stylesheet" href="../assets/css/start.css">
     <style>
         svg {
@@ -38,6 +39,12 @@
 </head>
 
 <body>
+    <!-- Preload animation -->
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div>
+    <!-- End of Preload animation -->
+
     <div id="container">
         <div id="belly-main-container">
             <div class="belly-accept-container">
@@ -83,6 +90,7 @@
             document.querySelector('svg').classList.add('animate');
         }, 10);
     </script>
+    <script src="../assets/js/preload.js"></script>
 </body>
 
 </html>

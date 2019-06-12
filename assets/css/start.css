@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Work+Sans:300,400,700,900");
+/*!
+ * Bel.ly - Auth CSS - Simple Sign In/Sign Up/Register in Native CSS :)
+ * Version: beta 0.1
+ * Coded by: Imam Kusniadi (17.11.1341)
+ */
+
+ @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Work+Sans:300,400,700,900");
 * {
     outline-width: 0;
     font-family: 'Montserrat' !important;

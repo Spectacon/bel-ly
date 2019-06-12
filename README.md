@@ -16,10 +16,10 @@ Just a simple another front-end project. This is an HTML, CSS, and JavaScript to
 ## To Do List
 Imam Kusniadi
 - Login & Register ```DONE```
-- Home Dashboard ```PROGRESS```
-- Account Profile ```NONE```
-- Withdraw ```NONE```
-- Transaction Detail ```NONE```
+- Home Dashboard ```DONE```
+- Account Profile ```IN PROGRESS```
+- Withdraw ```IN PROGRESS```
+- Transaction Detail ```IN PROGRESS```
 
 ## Development
 Currently is under development. This development proccess can be see at https://bel-ly.herokuapp.com

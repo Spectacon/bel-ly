@@ -1,9 +1,3 @@
-// Display loading animation while page loads
-$(window).load(function() {
-    // Animate loader off screen
-    $("#preloader").delay(100).fadeOut("slow");
-});
-
 /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
     document.getElementById("myDropdown").classList.toggle("show");

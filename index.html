@@ -8,14 +8,21 @@
     <link rel="shortcut icon" href="assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="assets/img/belly-32.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="assets/css/preload.css">
     <link rel="stylesheet" href="assets/css/start.css">
     <script src="assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="assets/js/lib/jquery.transit.js"></script>
 </head>
 <body>
+    <!-- Preload animation -->
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div>
+    <!-- End of Preload animation -->
+    
     <div id="container">
-        <div id="inviteContainer">
-            <div class="logoContainer">
+        <div id="belly-main-container">
+            <div class="belly-logo-container">
                 <img class="logo" src="assets/img/belly-512.png" />
                 <img class="text" src="assets/img/belly-text.png" />
             </div>
@@ -33,25 +40,28 @@
 
         function _change() {
             var images = ['bg-1.png', 'bg-2.png', 'bg-3.png'];
-            $('#container').append('<style>#container, .acceptContainer:before, #logoContainer:before {background: url(assets/img/background/' + images[Math.floor(Math.random() * images.length)] + ') center fixed }');
+            $('#container').append('<style>#container, .belly-accept-container:before, #belly-logo-container:before {background: url(assets/img/background/' + images[Math.floor(Math.random() * images.length)] + ') center fixed }');
             setTimeout(_change, 2000);
         }
 
         _change();
 
         setTimeout(function() {
-            $('.logoContainer').transition({
+            $('.belly-logo-container').transition({
                 scale: 1
             }, 700, 'ease');
             setTimeout(function() {
-                $('.logoContainer .logo').addClass('loadIn');
+                $('.belly-logo-container .logo').addClass('loadIn');
                 setTimeout(function() {
-                    $('.logoContainer .text').addClass('loadIn');
+                    $('.belly-logo-container .text').addClass('loadIn');
                 }, 500);
             }, 1000);
         }, 10);
 
         });
     </script>
+    <script src="assets/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/lib/jquery.transit.js"></script>
+    <script src="assets/js/preload.js"></script>
 </body>
 </html>

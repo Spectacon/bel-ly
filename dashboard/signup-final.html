@@ -8,12 +8,19 @@
     <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="../assets/css/preload.css">
     <link rel="stylesheet" href="../assets/css/start.css">
     <script src="../assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="../assets/js/lib/jquery.transit.js"></script>
 </head>
 
 <body>
+    <!-- Preload animation -->
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div>
+    <!-- End of Preload animation -->
+
     <div id="container">
         <div id="belly-main-container">
             <div class="belly-logo-container">
@@ -68,6 +75,7 @@
             });
         });
     </script>
+    <script src="../assets/js/preload.js"></script>
 </body>
 
 </html>
