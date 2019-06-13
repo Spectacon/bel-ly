@@ -630,11 +630,16 @@ tbody {
 }
 
 /* Information on dashboard */
-.info-row {
+.belly-row {
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 20px;
 	opacity: 0.85;
+}
+.row-left, .row-right {
+	position: relative;
+    width: 100%;
+    min-height: 1px;
 }
 .col,
 .sm {
@@ -716,6 +721,14 @@ tbody {
 	.belly-footer {
 		text-align: center;
 		justify-content: space-between;
+	}
+	.row-left {
+		flex: 0 0 66.6666666667%;
+		max-width: 66.6666666667%;
+	}
+	.row-right {
+		flex: 0 0 33.3333333333%;
+		max-width: 33.3333333333%;
 	}
 }
 @media (min-width: 1200px) {

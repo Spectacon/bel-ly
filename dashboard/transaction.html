@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bel.ly - Transaction</title>
+    <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
+    <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/preload.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <!-- Fontawesome -->
+    <link rel='stylesheet' href='../assets/css/lib/font-awesome.min.css'>
+</head>
+
+<body>
+    <!-- Preload animation -->
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div>
+    <!-- End of Preload animation -->
+
+    <div class="belly-logo">
+        <a href="./home.html">
+            <img src="../assets/img/belly-32.png" class="belly-logo-image" height="32">
+            <img src="../assets/img/belly-text.png" class="belly-logo-image" height="32">
+        </a>
+    </div>
+    <div class="belly-sideleft overflow-y-auto ps">
+        <ul class="belly-sideleft-menu">
+            <li class="belly-menu-item">
+                <a class="belly-menu-link" href="./home.html">
+                    <i class="menu-item-icon fa fa-diamond text-size-24"></i>
+                    <span class="menu-item-label">Dashboard</span>
+                </a>
+            </li>
+            <li class="belly-menu-item">
+                <a onclick="dropdownMenuNavigation()" href="#" class="belly-menu-link with-sub">
+                    <i class="menu-item-icon fa fa-clone text-size-24"></i>
+                    <span class="menu-item-label">Products</span>
+                </a>
+                <ul id="navDropdown" class="belly-menu-sub flex-column">
+                    <li class="sub-item">
+                        <a class="sub-link" href="./item.html">Item</a>
+                    </li>
+                    <li class="sub-item">
+                        <a class="sub-link" href="./service.html">Service</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="belly-menu-item">
+                <a class="belly-menu-link active" href="./transaction.html">
+                    <i class="menu-item-icon fa fa-file text-size-24"></i>
+                    <span class="menu-item-label">Transaction</span>
+                </a>
+            </li>
+            <li class="belly-menu-item">
+                <a class="belly-menu-link" href="./withdraw.html">
+                    <i class="menu-item-icon fa fa-credit-card text-size-24"></i>
+                    <span class="menu-item-label">Withdraw</span>
+                </a>
+            </li>
+            <li class="belly-menu-item">
+                <a class="belly-menu-link" href="./setting.html">
+                    <i class="menu-item-icon fa fa-cogs text-size-24"></i>
+                    <span class="menu-item-label">Setting</span>
+                </a>
+            </li>
+            <li class="belly-menu-item">
+                <a class="belly-menu-link" href="./support.html">
+                    <i class="menu-item-icon fa fa-paper-plane text-size-24"></i>
+                    <span class="menu-item-label">Support</span>
+                </a>
+            </li>
+        </ul>
+        <div class="belly-box-ads-padding">
+            <div class="belly-box-ads">
+                <div class="belly-box-ads-wrapper">
+                    <span class="ads-title">Get Pro Badge <i class="menu-item-icon fa fa-star text-size-24"></i></span>
+                    <div class="benefits">
+                        <p class="benefit">- Get more product space</p>
+                        <p class="benefit">- Best support 24/7</p>
+                        <p class="benefit">- No fee in withdraw</p>
+                        <p class="benefit">- No payment limit</p>
+                        <p class="benefit">- Payment will more faster &nbsp;&nbsp;in clereance</p>
+
+                        <button class="belly-button-ads belly-button-ads-x" type="button">Check it out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="belly-header">
+        <div class="belly-header-left">
+
+        </div>
+        <div class="belly-header-right">
+            <nav class="nav">
+                <div class="avatar-dropdown">
+                    <img src="../assets/img/avatar/default.png" onclick="dropdownMenu()" class="width-32 rounded-circle dropbtn" alt="">
+                    <div id="myDropdown" class="avatar-dropdown-content">
+                        <a style="font-weight: bold; color: #fff;">Imam Kusniadi</a>
+                        <hr style="width: 158px">
+                        <a href="#notification"><i class="menu-item-icon fa fa-bell text-size-24"></i> Notification</a>
+                        <a href="./account.html"><i class="menu-item-icon fa fa-user text-size-24"></i> Account Profile</a>
+                        <a href="./change-password.html"><i class="menu-item-icon fa fa-key text-size-24"></i> Change Password</a>
+                        <a href="./#logout"><i class="menu-item-icon fa fa-power-off text-size-24 log-out"></i> <span class="log-out">Log Out</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="belly-mainpanel" style="position: relative;">
+        <div class="belly-pagetitle">
+            <h2>Transaction</h2>
+            <p>Current transaction that has been made.</p>
+
+            <div class="belly-row" style="padding-top: 0px;">
+                <div class="row-left sm-padding">
+                    <h6 class="belly-sub-title belly-sub-markdown">Transaction History</h6>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>debora69</td>
+                                <td>Buletprof Hosting SSD 1Tb</td>
+                                <td>$ 180.00</td>
+                                <td>Sat, 2 Jun 2019 - 11:50 AM</td>
+                                <td class="tn-success">Success</td>
+                            </tr>
+                            <tr>
+                                <td>yakazuka</td>
+                                <td>PHP Script Fixing Service</td>
+                                <td>$ 15.00</td>
+                                <td>Sat, 2 Jun 2019 - 11:45 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>unix666</td>
+                                <td>AK47 Guns</td>
+                                <td>$ 1,500.00</td>
+                                <td>Sat, 1 Jun 2019 - 12:15 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>donbandito876</td>
+                                <td>Bug Bounty</td>
+                                <td>$ 500.00</td>
+                                <td>Sat, 1 Jun 2019 - 11:58 AM</td>
+                                <td class="tn-success">Success</td>
+                            </tr>
+                            <tr>
+                                <td>re7r0</td>
+                                <td>Organic SEO Keyword</td>
+                                <td>$ 15.00</td>
+                                <td>Sat, 1 Jun 2019 - 11:52 AM</td>
+                                <td class="tn-success">Success</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                            <tr>
+                                <td>user-test</td>
+                                <td>Test Item</td>
+                                <td>$ 160.00</td>
+                                <td>Sat, 1 Jun 2019 - 10:12 AM</td>
+                                <td class="tn-on-hold">On Hold</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row-right">
+                    <h6 class="belly-sub-title belly-sub-markdown">Status</h6>
+                    <div class="belly-box-area belly-box-area-bg">
+                        <h4 style="color: #1BE974;">SUCCESS</h4>
+                        <h4 style="color: #E91B22">ON HOLD</h4>
+                    </div>
+
+                    <h6 class="belly-sub-title belly-sub-markdown">Action</h6>
+                    <div class="belly-box-area belly-box-area-bg">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="belly-footer">
+            <div class="footer-right">
+                <span>Developed by Bel.ly Team | Special by Imam Kusniadi</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/lib/jquery.transit.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/preload.js"></script>
+</body>
+
+</html>
