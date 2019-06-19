@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bel.ly - Dashboard</title>
+    <title>Bel.ly - Products / Manage Item</title>
     <link rel="shortcut icon" href="../assets/img/belly-32.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/belly-32.png" type="image/x-icon">
 
@@ -31,13 +31,13 @@
     <div class="belly-sideleft overflow-y-auto ps">
         <ul class="belly-sideleft-menu">
             <li class="belly-menu-item">
-                <a class="belly-menu-link active" href="./home.html">
+                <a class="belly-menu-link" href="./home.html">
                     <i class="menu-item-icon fa fa-diamond text-size-24"></i>
                     <span class="menu-item-label">Dashboard</span>
                 </a>
             </li>
             <li class="belly-menu-item">
-                <a onclick="dropdownMenuNavigation()" href="#" class="belly-menu-link with-sub">
+                <a onclick="dropdownMenuNavigation()" href="#" class="belly-menu-link with-sub active">
                     <i class="menu-item-icon fa fa-clone text-size-24"></i>
                     <span class="menu-item-label">Products</span>
                 </a>
@@ -115,84 +115,15 @@
 
     <div class="belly-mainpanel" style="position: relative;">
         <div class="belly-pagetitle">
-            <h2>Dashboard</h2>
-            <p>Welcome back Imam Kusniadi enjoy your business with us.</p>
+            <h2>Products / Manage Item</h2>
+            <p>Manage your items to sell with us.</p>
 
-            <div class="belly-row">
-                <div class="col sm sm-padding">
-                    <div class="info-box-balance">
-                        <p class="benefit">Your Available</p>
-                        <span class="info-balance">Balance <span style="float:right;">$9,600.00</span></span>
-                    </div>
-                </div>
-                <div class="col sm-2 sm-padding">
-                    <div class="info-box-hold">
-                        <p class="benefit">On Hold</p>
-                        <span class="info-balance">$2,500.00</span>
-                    </div>
-                </div>
-                <div class="col sm-2">
-                    <div class="info-box-success">
-                        <p class="benefit">Success</p>
-                        <span class="info-balance">$6,900.00</span>
-                    </div>
-                </div>
+            <div class="alert-box">
+                <blockquote>
+                    <span class="paragraph"><i class="menu-item-icon fa fa-info-circle text-size-24"></i> Undergoing Maintenance.</span>
+                </blockquote>
             </div>
 
-            <h6 class="belly-sub-title belly-sub-markdown">Summary</h6>
-            <div class="belly-box-area belly-box-area-bg">
-                <canvas id="summaryChart" width="100%" height="25%"></canvas>
-            </div>
-
-            <h6 class="belly-sub-title belly-sub-markdown">Last Transaction</h6>
-            <table>
-                    <thead>
-                        <tr>
-                            <th>Username</th>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Time</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>debora69</td>
-                            <td>Buletprof Hosting SSD 1Tb</td>
-                            <td>$ 180.00</td>
-                            <td>Sat, 2 Jun 2019 - 11:50 AM</td>
-                            <td class="tn-success">Success</td>
-                        </tr>
-                        <tr>
-                            <td>yakazuka</td>
-                            <td>PHP Script Fixing Service</td>
-                            <td>$ 15.00</td>
-                            <td>Sat, 2 Jun 2019 - 11:45 AM</td>
-                            <td class="tn-on-hold">On Hold</td>
-                        </tr>
-                        <tr>
-                            <td>unix666</td>
-                            <td>AK47 Guns</td>
-                            <td>$ 1,500.00</td>
-                            <td>Sat, 1 Jun 2019 - 12:15 AM</td>
-                            <td class="tn-on-hold">On Hold</td>
-                        </tr>
-                        <tr>
-                            <td>donbandito876</td>
-                            <td>Bug Bounty</td>
-                            <td>$ 500.00</td>
-                            <td>Sat, 1 Jun 2019 - 11:58 AM</td>
-                            <td class="tn-success">Success</td>
-                        </tr>
-                        <tr>
-                            <td>re7r0</td>
-                            <td>Organic SEO Keyword</td>
-                            <td>$ 15.00</td>
-                            <td>Sat, 1 Jun 2019 - 11:52 AM</td>
-                            <td class="tn-success">Success</td>
-                        </tr>
-                    </tbody>
-                </table>
         </div>
 
         <div class="belly-footer">
@@ -202,45 +133,6 @@
         </div>
     </div>
 
-    <script src="../assets/js/lib/chart.js/Chart.js"></script>
-    <script type="text/javascript">
-        var ctx = document.getElementById('summaryChart').getContext('2d');
-        new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['14 May', '15 May', '16 May', '17 May', '18 May', '19 May', '20 May', '21 May', '22 May', '23 May', '24 May', '25 May', '26 May', '27 May', '28 May', '29 May', '30 May', '31 May', '1 Jun', '2 Jun'],
-            datasets: [{
-            label: '# of Orders',
-            data: [9, 19, 20, 22, 14, 25, 10, 13, 21, 5, 14, 16, 7, 21, 12, 23, 20, 17, 25, 26],
-            fill: false,
-            backgroundColor: '#6B7FC5'
-            }]
-        },
-        options: {
-            legend: {
-            display: false,
-                labels: {
-                display: false
-                }
-            },
-            scales: {
-            yAxes: [{
-                ticks: {
-                beginAtZero:true,
-                fontSize: 10,
-                max: 30
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                beginAtZero:true,
-                fontSize: 11
-                }
-            }]
-            }
-        }
-        });
-    </script>
     <script src="../assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="../assets/js/lib/jquery.transit.js"></script>
     <script src="../assets/js/dashboard.js"></script>

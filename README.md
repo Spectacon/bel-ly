@@ -3,7 +3,7 @@
 # BEL.LY - Escrow & Payment Solution (Front-End)
 #### Will be update soon
 
-Just a simple another front-end project. This is an HTML, CSS, and JavaScript to build Web Static for completed task from the lecture. Just for fun!
+Just a simple another front-end project. This is an HTML, CSS, and JavaScript to build Web Static for completed task from the lecture. Just for fun! :)
 
 ### Donate
 - If this project very help you to learn about front-end and u want support me , you can give me a cup of coffee :)
@@ -11,15 +11,16 @@ Just a simple another front-end project. This is an HTML, CSS, and JavaScript to
 
 ## Current Library Used
 - jQuery
-- D3
+- Chart.js
 
 ## To Do List
-Imam Kusniadi
-- Login & Register ```DONE```
-- Home Dashboard ```DONE```
-- Account Profile ```IN PROGRESS```
-- Withdraw ```IN PROGRESS```
-- Transaction Detail ```IN PROGRESS```
+Imam Kusniadi (17.11.1341)
+
+- Login & Register ```DONE``` | Path: ./dashboard
+- Home Dashboard ```DONE``` | Path: ./dashboard/home.html
+- Account Profile ```IN PROGRESS``` | Path: ./dashboard/account.html
+- Withdraw ```IN PROGRESS``` | Path: ./dashboard/withdraw.html
+- Transaction Detail ```DONE, BUT NEED FIXING SOME ISSUE``` | Path: ./dashboard/transaction.html
 
 ## Development
 Currently is under development. This development proccess can be see at https://bel-ly.herokuapp.com
