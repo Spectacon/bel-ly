@@ -1,0 +1,693 @@
+<style>
+/*!
+ * Bracket Plus Responsive Dashboard Template
+ * Version: 1.1.0
+ * Author: ThemePixels (@themepixels)
+ * URL: http://themepixels.me/bracketplus
+ *
+ * TABLE OF CONTENTS
+ *
+ * 1.   GOOGLE FONTS IMPORT
+ *
+ * 2.   BOOTSTRAP FRAMEWORK
+ *
+ * 3.   BOOTSTRAP OVERRIDES
+ *        3.1   Alerts
+ *        3.2   Buttons
+ *        3.3   Cards
+ *        3.4   Carousel
+ *        3.5   Custom
+ *        3.6   Custom Forms
+ *        3.7   Forms
+ *        3.8   Form Layouts
+ *        3.9   Modal
+ *        3.10  Navigation
+ *        3.11  Pagination
+ *        3.12  Popover
+ *        3.13  Progress
+ *        3.14  Tooltip
+ *        3.15  Tables
+ *        3.16  Widgets
+ *
+ * 4.   CUSTOM VENDOR STYLES
+ *        4.1   Chartist
+ *        4.2   Codemirror
+ *        4.3   Datatables
+ *        4.4   Flot
+ *        4.5   IonRangeSlider
+ *        4.6   jQuery Steps
+ *        4.7   jQuery UI
+ *        4.8   JQVMap
+ *        4.9   Leaflet
+ *        4.10  Medium Editor
+ *        4.11  Morris
+ *        4.12  Parsley
+ *        4.13  Perfect Scrollbar
+ *        4.14  Rickshaw
+ *        4.15  Select2
+ *        4.16  Sparkline
+ *        4.17  Spectrum
+ *        4.18  Summernote
+ *        4.19  Switch Buttons
+ *        4.20  TagsInput
+ *        4.21  Toggles
+ *
+ * 5.   BRACKET PLUS CORE STYLES
+ *
+ * 6.   FULL RTL SUPPORT
+ *
+ * 7.   UTILITIES / HELPER CLASSES
+ *        7.1   Background
+ *        7.2   Border
+ *        7.3   Height
+ *        7.4   Hover
+ *        7.5   Margin
+ *        7.6   Misc
+ *        7.7   Padding
+ *        7.8   Position
+ *        7.9   Typography
+ *        7.10  Width
+ *
+**/
+/* ------------------------------------------------------ */
+/* ############### 1. GOOGLE FONTS IMPORT ############### */
+/* ------------------------------------------------------ */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text");
+/* ------------------------------------------------------ */
+/* ############### 2. BOOTSTRAP FRAMEWORK ############### */
+/* ------------------------------------------------------ */
+/*!
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@media print {
+  *,
+  *::before,
+  *::after {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #868ba1;
+  background-color: #E9ECEF;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #0866C6;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:hover {
+  color: #05407c;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+a {
+  touch-action: manipulation;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-header:first-child {
+  border-radius: calc(3px - 1px) calc(3px - 1px) 0 0;
+}
+@supports (transform-style: preserve-3d) {
+}
+@supports (transform-style: preserve-3d) {
+}
+@supports (transform-style: preserve-3d) {
+}
+
+.rounded-0 {
+  border-radius: 0;
+}
+
+@supports (position: sticky) {
+}
+
+@media (max-width: 575px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* ############### 3. BOOTSTRAP OVERRIDES ############### */
+/* ------------------------------------------------------ */
+/* ------------------------------------------ */
+/* ############### 3.1 Alerts ############### */
+/* ------------------------------------------ */
+
+/* ########## RTL SUPPORT ########## */
+
+/* ------------------------------------------- */
+/* ############### 3.2 Buttons ############### */
+/* ------------------------------------------- */
+
+/* ----------------------------------------- */
+/* ############### 3.3 Cards ############### */
+/* ----------------------------------------- */
+.card-header {
+  border-color: #dee2e6;
+}
+
+/***** RTL SUPPORT *****/
+
+/* -------------------------------------------- */
+/* ############### 3.4 Carousel ############### */
+/* -------------------------------------------- */
+
+/***** RTL SUPPORT *****/
+
+/* ------------------------------------------ */
+/* ############### 3.6 Custom ############### */
+/* ------------------------------------------ */
+a {
+  transition: all 0.2s ease-in-out;
+}
+
+a:focus,
+a:active {
+  outline: none !important;
+}
+
+/* ########## RTL SUPPORT ########## */
+
+/* ------------------------------------------------ */
+/* ############### 3.5 Custom Forms ############### */
+/* ------------------------------------------------ */
+/* Checkbox */
+
+/* Checkbox color variant */
+
+/* Radio Box */
+
+/* Radiobox Color Variant */
+
+/* Inside input group */
+
+/* File Browser */
+
+/* ########## RTL SUPPORT ########## */
+
+/* ----------------------------------------- */
+/* ############### 3.8 Forms ############### */
+/* ----------------------------------------- */
+/* #################### VALIDATION #################### */
+
+/* #################### INPUT FORM STYLES #################### */
+
+/* #################### INPUT FILE BROWSER #################### */
+
+/* #################### RTL SUPPORT #################### */
+
+/* ------------------------------------------------- */
+/* ############### 3.7 Form Layoyuts ############### */
+/* ------------------------------------------------- */
+
+/***** FORM LAYOUT 1 *****/
+
+/***** FORM LAYOUT 2 & 3 *****/
+
+/***** FORM LAYOUT 3 *****/
+
+/***** FORM LAYOUT 4 & 5 *****/
+
+/***** FORM LAYOUT 5 *****/
+
+/***** FORM LAYOUT 6 & 7 *****/
+
+/***** FORM LAYOUT 7 *****/
+
+/* ########### RTL SUPPORT ########## */
+
+/* ------------------------------------------ */
+/* ############### 3.9 Modals ############### */
+/* ------------------------------------------ */
+
+/***** RTL SUPPORT *****/
+
+/* ----------------------------------------------- */
+/* ############### 3.10 Navigation ############### */
+/* ----------------------------------------------- */
+
+/* ########## RTL SUPPORT ########## */
+
+/* ----------------------------------------------- */
+/* ############### 3.11 Pagination ############### */
+/* ----------------------------------------------- */
+
+/* ########## RTL SUPPORT ########## */
+
+/* -------------------------------------------- */
+/* ############### 3.12 Popover ############### */
+/* -------------------------------------------- */
+
+/* --------------------------------------------- */
+/* ############### 3.13 Progress ############### */
+/* --------------------------------------------- */
+
+/* -------------------------------------------- */
+/* ############### 3.15 Toltips ############### */
+/* -------------------------------------------- */
+
+/* ------------------------------------------- */
+/* ############### 3.14 Tables ############### */
+/* ------------------------------------------- */
+
+/* ########## RTL SUPPORT ########## */
+
+/* -------------------------------------------- */
+/* ############### 3.16 Widgets ############### */
+/* -------------------------------------------- */
+
+/* RTL widget-1 */
+
+/* RTL widget-3 */
+
+.widget-4 .card-header {
+  border-bottom-color: #e9ecef;
+  background-color: transparent;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .widget-4 .card-header {
+    justify-content: space-between;
+  }
+}
+.widget-4 .card-header a {
+  color: #868e96;
+}
+.widget-4 .card-header a:hover, .widget-4 .card-header a:focus {
+  color: #343a40;
+}
+.widget-4 .card-body {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 25px;
+}
+.widget-4 .card-profile-img {
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+  left: 50%;
+  top: 25px;
+  margin-left: -50px;
+}
+.widget-4 .card-profile-img img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* RTL widget-5 */
+
+/* RTL widget-6 */
+
+/* RTL widget-9 */
+
+/** RTL SUPPORT */
+
+/* ------------------------------------------------------- */
+/* ############### 4. CUSTOM VENDOR STYLES ############### */
+/* ------------------------------------------------------- */
+/* -------------------------------------------- */
+/* ############### 4.1 Chartist ############### */
+/* -------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* ############### 4.2 Codemirror ############### */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* ############### 4.3 DataTables ############### */
+/* ---------------------------------------------- */
+
+/* ############### RTL SUPPORT ############### */
+
+/* ---------------------------------------- */
+/* ############### 4.4 Flot ############### */
+/* ---------------------------------------- */
+
+/* -------------------------------------------------- */
+/* ############### 4.5 IonRangeSlider ############### */
+/* -------------------------------------------------- */
+
+/* #################### COLOR VARIANT SKINS #################### */
+
+/* #################### MODERN SKIN #################### */
+
+/* #################### OUTLINE SKIN #################### */
+
+/* ------------------------------------------------ */
+/* ############### 4.6 jQuery Steps ############### */
+/* ------------------------------------------------ */
+/***** DEFAULT STYLE WIZARD *****/
+
+/****** EQUAL COLUMN WIDTH STEP INDICATOR *****/
+
+/***** CUSTOM STYLES *****/
+
+/* ############### RTL SUPPORT ############### */
+
+/* ------------------------------------------ */
+/* ############### 4.8 JQVMap ############### */
+/* ------------------------------------------ */
+
+/* Setup basic CSS for Label */
+
+/* Hide Whichever Labels you want */
+
+/* Reposition Labels that are not quite right ( labels are centered in shape, and sometimes need tweaking ) */
+
+/* Add responsibe support to resize labels for difference screen sizes */
+/* --------------------------------------------- */
+/* ############### 4.7 jQuery UI ############### */
+/* --------------------------------------------- */
+/***** DATEPICKER *****/
+
+/* #################### DATEPICKER SKINS #################### */
+
+/* ------------------------------------------- */
+/* ############### 4.9 Leaflet ############### */
+/* ------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* ############### 4.10 Medium Editor ############### */
+/* -------------------------------------------------- */
+
+/* ------------------------------------------- */
+/* ############### 4.11 Morris ############### */
+/* ------------------------------------------- */
+
+/* -------------------------------------------- */
+/* ############### 4.12 Parsley ############### */
+/* -------------------------------------------- */
+
+/***** CUSTOM STYLED ERROR MESSAGE *****/
+
+/* ------------------------------------------------------ */
+/* ############### 4.13 Perfect Scrollbar ############### */
+/* ------------------------------------------------------ */
+
+/* --------------------------------------------- */
+/* ############### 4.14 Rickshaw ############### */
+/* --------------------------------------------- */
+
+/* -------------------------------------------- */
+/* ############### 4.15 Select2 ############### */
+/* -------------------------------------------- */
+
+/* #################### SELECT 2 SKINS #################### */
+
+/* ---------------------------------------------- */
+/* ############### 4.16 Sparkline ############### */
+/* ---------------------------------------------- */
+
+/* --------------------------------------------- */
+/* ############### 4.17 Spectrum ############### */
+/* --------------------------------------------- */
+
+/* ----------------------------------------------- */
+/* ############### 4.18 Summernote ############### */
+/* ----------------------------------------------- */
+
+/* --------------------------------------------------- */
+/* ############### 4.19 Switch Buttons ############### */
+/* --------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* ############### 4.20 TagsInput ############### */
+/* ---------------------------------------------- */
+
+/* -------------------------------------------- */
+/* ############### 4.21 Toggles ############### */
+/* -------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* ############### 5. BRACKET PLUS CORE STYLES ############### */
+/* ----------------------------------------------------------- */
+/*
+ * Bracket Plus v1.0.0 (https://themepixels.me/bracket)
+ * Copyright 2017-2018 ThemePixels
+ * Licensed under ThemeForest License
+ */
+
+/* ##### EMAIL PAGE ##### */
+
+/** WITH SUB LEFT MENU **/
+
+/** SITEMAP **/
+
+/* CONTACTS MANAGER */
+
+/* ############### PROFILE PAGE ############### */
+
+/* --------------------------------------------------- */
+/* ############### 6. FULL RTL SUPPORT ############### */
+/* --------------------------------------------------- */
+
+/* Helper Class */
+
+/* ------------------------------------------------------------- */
+/* ############### 7. UTILITIES / HELPER CLASSES ############### */
+/* ------------------------------------------------------------- */
+/* ---------------------------------------------- */
+/* ############### 7.1 Background ############### */
+/* ---------------------------------------------- */
+
+/* ------------------------------------------ */
+/* ############### 7.2 Border ############### */
+/* ------------------------------------------ */
+
+.bd-0 {
+  border-width: 0;
+}
+/* ------------------------------------------ */
+/* ############### 7.3 Height ############### */
+/* ------------------------------------------ */
+
+.ht-75 {
+  height: 75px;
+}
+/* ----------------------------------------- */
+/* ############### 7.4 Hover ############### */
+/* ----------------------------------------- */
+
+/* ------------------------------------------ */
+/* ############### 7.5 Margin ############### */
+/* ------------------------------------------ */
+
+.mg-b-0 {
+  margin-bottom: 0px;
+}
+
+.mg-r-5 {
+  margin-right: 5px;
+}
+
+.mg-r-10 {
+  margin-right: 10px;
+}
+
+.mg-b-25 {
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+
+  .mg-md-r-auto {
+    margin-right: auto;
+  }
+
+  .mg-md-l-auto {
+    margin-left: auto;
+  }
+}
+/* ---------------------------------------- */
+/* ############### 7.6 Misc ############### */
+/* ---------------------------------------- */
+
+.shadow-base {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+}
+/* ------------------------------------------- */
+/* ############### 7.7 Padding ############### */
+/* ------------------------------------------- */
+
+/* -------------------------------------------- */
+/* ############### 7.8 Position ############### */
+/* -------------------------------------------- */
+/* ---------------------------------------------- */
+/* ############### 7.9 Typography ############### */
+/* ---------------------------------------------- */
+
+.tx-medium {
+  font-weight: 500;
+}
+
+.tx-normal {
+  font-weight: 400;
+}
+
+.tx-roboto {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+.tx-white {
+  color: #fff;
+}
+
+.tx-white-8 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tx-24 {
+  font-size: 24px;
+}
+/* ------------------------------------------ */
+/* ############### 7.10 Width ############### */
+/* ------------------------------------------ */
+@media (min-width: 768px) {
+
+  .wd-md-500 {
+    width: 500px;
+  }
+}
+</style>
+
+<div class="card shadow-base bd-0 rounded-0 widget-4">
+    <div class="card-header ht-75">
+        <div class="hidden-xs-down">
+            <a href="" class="mg-r-10"><span class="tx-medium">498</span> Followers</a>
+            <a href=""><span class="tx-medium">498</span> Following</a>
+        </div>
+        <div class="tx-24 hidden-xs-down">
+            <a href="" class="mg-r-10"><i class="icon ion-ios-email-outline"></i></a>
+            <a href=""><i class="icon ion-more"></i></a>
+        </div>
+    </div>
+     <!-- card-header -->
+    <div class="card-body">
+        <div class="card-profile-img">
+            <img src="../img/img1.jpg" alt="">
+        </div>
+        <!-- card-profile-img -->
+        <h4 class="tx-normal tx-roboto tx-white">Katherine M. Pechon</h4>
+        <p class="mg-b-25">Wine Connoisseur</p>
+    
+        <p class="wd-md-500 mg-md-l-auto mg-md-r-auto mg-b-25">Singer, Lawyer, Achiever, Wearer of unrelated hats, Data Visualizer, Mayonaise Tester. I don't know what alt-tab does. Storyteller.</p>
+    
+        <p class="mg-b-0 tx-24">
+            <a href="" class="tx-white-8 mg-r-5"><i class="fa fa-facebook-official"></i></a>
+            <a href="" class="tx-white-8 mg-r-5"><i class="fa fa-twitter"></i></a>
+            <a href="" class="tx-white-8 mg-r-5"><i class="fa fa-pinterest"></i></a>
+            <a href="" class="tx-white-8"><i class="fa fa-instagram"></i></a>
+        </p>
+    </div>
+    <!-- card-body -->
+</div>

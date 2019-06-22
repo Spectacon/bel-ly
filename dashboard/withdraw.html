@@ -120,10 +120,113 @@
 
             <div class="alert-box">
                 <blockquote>
-                    <span class="paragraph"><i class="menu-item-icon fa fa-info-circle text-size-24"></i> Undergoing Maintenance.</span>
+                    <span class="paragraph"><i class="menu-item-icon fa fa-info-circle text-size-24"></i> Maximum amount are <b>$ 2,000.00</b> on every withdraw.</span>
                 </blockquote>
             </div>
 
+            <div class="belly-row" style="padding-top: 0px;">
+                <div class="row-left sm-padding">
+                    <h6 class="belly-sub-title belly-sub-markdown">Withdraw Balance</h6>
+                    <div class="belly-box-area belly-box-area-bg">
+                        <form>
+                            <div class="belly-form-container">
+                                <div class="formDiv loadIn">
+                                    <p>Withdraw By</p>
+                                    <select class="custom-select" name="withdrawBy" required="" placeholder=" -- Select -- ">
+                                        <option selected disable>Choose an withdraw processor</option>
+                                        <option value="Bank">Bank</option>
+                                        <option value="PayPal">PayPal</option>
+                                        <option value="Bitcoin">Bitcoin</option>
+                                        <option value="Etherium">Etherium</option>
+                                    </select>
+                                </div>
+                                <div class="formDiv loadIn">
+                                    <p>Account</p>
+                                    <select class="custom-select" name="account" required="" placeholder=" -- Select -- ">
+                                        <option selected disable>Choose an account</option>
+                                        <option value="BCA">BCA XXXX - 4657 - GOLD - DEBIT</option>
+                                        <option value="BNI">BNI XXXX - 4765 - PLATINUM - DEBIT</option>
+                                    </select>
+                                </div>
+                                <div class="formDiv loadIn">
+                                    <p>Amount</p>
+                                    <input type="number" name="amount" required="" autocomplete="off" placeholder="1000" />
+                                    <p id="typingEmail"></p>
+                                </div>
+                                <div class="formDiv loadIn">
+                                    <button class="submitBtn" type="submit" id="btn-submit">Proccess</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <h6 class="belly-sub-title belly-sub-markdown">Last Withdraw</h6>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Account</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>BCA XXXX - 4657 - GOLD - DEBIT</td>
+                                    <td>Bank</td>
+                                    <td>$ 780.00</td>
+                                    <td>Sat, 2 Jun 2019 - 11:50 AM</td>
+                                    <td class="tn-on-hold">Hold</td>
+                                </tr>
+                                <tr>
+                                    <td>BCA XXXX - 4657 - GOLD - DEBIT</td>
+                                    <td>Bank</td>
+                                    <td>$ 120.00</td>
+                                    <td>Sat, 2 Jun 2019 - 11:50 AM</td>
+                                    <td class="tn-success">Success</td>
+                                </tr>
+                                <tr>
+                                    <td>BCA XXXX - 4657 - GOLD - DEBIT</td>
+                                    <td>Bank</td>
+                                    <td>$ 60.00</td>
+                                    <td>Sat, 2 Jun 2019 - 11:50 AM</td>
+                                    <td class="tn-success">Success</td>
+                                </tr>
+                                <tr>
+                                    <td>BCA XXXX - 4657 - GOLD - DEBIT</td>
+                                    <td>Bank</td>
+                                    <td>$ 50.00</td>
+                                    <td>Sat, 2 Jun 2019 - 11:50 AM</td>
+                                    <td class="tn-success">Success</td>
+                                </tr>
+                                <tr>
+                                    <td>BCA XXXX - 4657 - GOLD - DEBIT</td>
+                                    <td>Bank</td>
+                                    <td>$ 30.00</td>
+                                    <td>Sat, 2 Jun 2019 - 11:50 AM</td>
+                                    <td class="tn-success">Success</td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+
+                    <div class="belly-pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+
+                </div>
+
+                <div class="row-right">
+                    <h6 class="belly-sub-title belly-sub-markdown">Withdraw Support</h6>
+                    <div class="belly-box-area belly-box-area-bg" style="text-align: center; opacity: 1;">
+                        <img src="../assets/img/withdraw-support.png" width="100%">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="belly-footer">

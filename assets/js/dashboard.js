@@ -2,6 +2,7 @@
 function dropdownMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
 function dropdownMenuNavigation() {
     document.getElementById("navDropdown").classList.toggle("nav");
 }
@@ -20,7 +21,7 @@ window.onclick = function(event) {
     }
     if (!event.target.matches('.with-sub')) {
         var dropdows = document.getElementById("navDropdown");
-        if(dropdows.classList.contains("nav")) {
+        if (dropdows.classList.contains("nav")) {
             dropdows.classList.remove('nav');
         }
     }
