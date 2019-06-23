@@ -249,7 +249,7 @@ belly-button-ads-x:focus {
 	font-size: 14px;
 	top: 9px;
 	right: 13px;
-	color: #868e96;
+	color: #fff;
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
@@ -538,7 +538,7 @@ belly-button-ads-x:focus {
 	background: rgba(32, 34, 37, .7);
 	border: 1px solid #202225;
 	padding: 3px 5px 4px;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	font-family: monospace;
 	font-size: 13px;
 	line-height: 13px;
@@ -546,7 +546,6 @@ belly-button-ads-x:focus {
 	overflow-x: auto;
 	padding: .5em;
 	-webkit-text-size-adjust: none;
-	font-family: monospace;
 	line-height: 15px;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
 }
@@ -663,6 +662,29 @@ form {
 
 .submitBtn:hover {
     background: #6B7FC5;
+}
+
+.submitBtnDelete {
+    width: 120px;
+    box-sizing: border-box;
+    background: #f04747;
+    border: #f04747;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.submitBtnDelete:hover {
+    background: #f15a5a;
 }
 
 /* Table */
@@ -848,8 +870,8 @@ tbody {
   margin-bottom: 0;
   background-color: #7289da;
   background-image: url("../img/background/bg-ads.jpg");
-  background-position: right -180px top -99px;
-  background-size: auto 400px;
+  background-position: right -180px top -140px;
+  background-size: auto 800px;
   border-radius: 4px;
   padding: 15px;
 }
@@ -866,11 +888,6 @@ tbody {
   justify-content: flex-end;
   align-items: center;
 }
-@media (min-width: 576px) {
-  .account-header {
-    justify-content: space-between;
-  }
-}
 .account-header a {
   color: #868e96;
 }
@@ -878,6 +895,7 @@ tbody {
   color: #343a40;
 }
 .account-info h2 {
+	margin-bottom: -10px;
 	color: #fff;
 	opacity: 0.8;
 }
@@ -898,6 +916,17 @@ tbody {
 .account-profile-img img {
   width: 100px;
   border-radius: 100%;
+}
+.info-box-reward {
+	color: #fff;
+	background-color: #282b30;
+	background-image: -webkit-gradient(linear, left top, right top, from(#7289DA), to(#7289da));
+	background-image: -webkit-linear-gradient(left, #7289DA 0%, #7289da 100%);
+	background-image: linear-gradient(to right, rgb(86, 136, 230) 0%, rgb(81, 93, 126) 100%);
+	background-repeat: repeat-x;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 10px;
 }
 
 /* More */
@@ -928,6 +957,15 @@ tbody {
 .alert-box {
     background: rgba(114,137,218,.3);
     border: 2px solid rgba(114,137,218,.75);
+    margin: 20px 0px 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.alert-box-2 {
+    background: rgba(250,166,26,.3);
+    border: 2px solid rgba(250,166,26,.75);
     margin: 20px 0px 0px;
     border-radius: 5px;
     font-size: 14px;
@@ -999,6 +1037,9 @@ tbody {
 	.sm-2 {
 		flex: 0 0 50%;
 		max-width: 25%;
+	}
+	.account-header {
+    	justify-content: space-between;
 	}
 }
 @media (min-width: 480px) {
