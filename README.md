@@ -18,9 +18,9 @@ Imam Kusniadi (17.11.1341)
 
 - Login & Register ```DONE``` | Path: ./dashboard
 - Home Dashboard ```DONE``` | Path: ./dashboard/home.html
-- Account Profile ```IN PROGRESS``` | Path: ./dashboard/account.html
-- Withdraw ```IN PROGRESS``` | Path: ./dashboard/withdraw.html
-- Transaction Detail ```DONE, BUT NEED FIXING SOME ISSUE``` | Path: ./dashboard/transaction.html
+- Account Profile ```DONE``` | Path: ./dashboard/account.html
+- Withdraw ```DONE``` | Path: ./dashboard/withdraw.html
+- Transaction Detail ```DONE``` | Path: ./dashboard/transaction.html
 
 ## Development
 Currently is under development. This development proccess can be see at https://bel-ly.herokuapp.com
